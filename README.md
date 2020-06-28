@@ -6,7 +6,7 @@ basic game
 ### Java
 JDK version 11 is necessary for running this code
 
-java --version
+$ java --version
 java 11.0.3 2019-04-16 LTS
 Java(TM) SE Runtime Environment 18.9 (build 11.0.3+12-LTS)
 Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.3+12-LTS, mixed mode)
@@ -15,10 +15,8 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.3+12-LTS, mixed mode)
 Gradle is a “build tool”.
 Gradle version 5
 
-gradle --version
-------------------------------------------------------------
+$ gradle --version
 Gradle 5.4.1
-------------------------------------------------------------
 Build time:
 Revision:
 Kotlin:
