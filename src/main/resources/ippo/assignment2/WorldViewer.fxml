@@ -5,31 +5,17 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ippo.assignment2.WorldController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ippo.assignment2.WorldViewer">
     <children>
         <ImageView fx:id="imageView" fitHeight="450.0" fitWidth="568.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
         <ImageView fx:id="itemView" fitHeight="50.0" fitWidth="50.0" layoutX="450.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
-        <Button layoutX="500.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonItem" text="item" />
-        <Button layoutX="14.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonBasket" text="basket" />
-        <Button layoutX="200.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonLeft" text="left" />
-        <Button layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonGo" text="go" />
+        <Button fx:id="buttonPickUpItem" layoutX="450.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonPickUpItem" text="pick up item" />
+        <Button layoutX="200.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonLeft" text=" left " />
+        <Button fx:id="buttonGo" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonGo" text="  go  " />
         <Button layoutX="300.0" layoutY="450.0" mnemonicParsing="false" onAction="#pressButtonRight" text="right" />
         <MenuBar prefHeight="29.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <menus>
-                <Menu mnemonicParsing="false" text="File">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                    </items>
-                </Menu>
-                <Menu fx:id="menu" mnemonicParsing="false" text="Items">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
-                    </items>
+                <Menu fx:id="menu" mnemonicParsing="false" text="Items in basket">
                 </Menu>
             </menus>
         </MenuBar>
